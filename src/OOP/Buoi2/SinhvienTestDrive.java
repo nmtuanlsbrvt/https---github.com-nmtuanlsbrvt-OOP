@@ -5,6 +5,6 @@ public class SinhvienTestDrive {
     sinhvien = new Sinhvien();
 
     sinhvien.nhapThongTin();
-    sinhvien.hienThiThongTin;
+    sinhvien.hienThiThongTin();
     
 }
