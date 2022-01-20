@@ -15,8 +15,10 @@ public class StudentGDU {
         System.out.println("học");
     };
     void thi(){
+        System.out.println("b");
     };
     void dangKyMonHoc(){
+        System.out.println("a");
     };
     
 }
