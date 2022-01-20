@@ -13,6 +13,10 @@ public class ShapeTestDrive {
         Triangle triangle = new Triangle();
         triangle.rotate();
         triangle.playSound3();
+
+        Amoeba amoeba = new Amoeba();
+        amoeba.rotate();
+        amoeba.playSound4();
     }
     
 }
