@@ -13,7 +13,6 @@ public class ShapeTestDrive {
         Triangle triangle = new Triangle();
         triangle.rotate();
         triangle.playSound3();
-        
     }
     
 }
