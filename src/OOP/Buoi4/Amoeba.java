@@ -9,13 +9,9 @@ public class Amoeba {
         this.soundFile = soundFile;
 
     }
-    public Amoeba(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
 
     void rotate(){
-        System.out.println("Xoay hình theo tọa độ" + this.x + this.y);
+        System.out.println("Xoay hình theo 360 độ);
     }
     void playSound4(){
         System.out.println("Chơi file "+ this.soundFile);
