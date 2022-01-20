@@ -14,7 +14,7 @@ public class ShapeTestDrive {
         triangle.rotate();
         triangle.playSound3();
 
-        Amoeba amoeba = new Amoeba();
+        Amoeba amoeba = new Amoeba("amoeba.hif",10,7);
         amoeba.rotate();
         amoeba.playSound4();
     }
