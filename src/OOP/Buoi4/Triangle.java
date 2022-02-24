@@ -1,7 +1,7 @@
 package OOP.Buoi4;
 
 public class Triangle {
-    String soundFile = "hinhtamgiac.aif";
+    private String soundFile = "hinhtamgiac.aif";
 
     public Triangle1(String soundFile){
         this.soundFile = soundFile;
