@@ -1,7 +1,7 @@
 package OOP.Buoi4;
 
 public class Square {
-    String soundFile = "hinhvuong.aif";
+    private String soundFile = "hinhvuong.aif";
 
     public Square1(String soundFile){
         this.soundFile = soundFile;
