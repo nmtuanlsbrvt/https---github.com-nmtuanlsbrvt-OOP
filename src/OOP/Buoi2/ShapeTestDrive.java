@@ -1,4 +1,4 @@
-package OOP.Buoi2;
+package oop.Buoi2;
 
 public class ShapeTestDrive {
     public static void main(String[] args) {

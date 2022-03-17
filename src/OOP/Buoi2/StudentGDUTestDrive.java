@@ -1,4 +1,4 @@
-package OOP.Buoi2;
+package oop.Buoi2;
 
 public class StudentGDUTestDrive {
         public static void main(String[] args) {

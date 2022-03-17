@@ -1,4 +1,4 @@
-package OOP.Buoi4;
+package oop.Buoi4;
 
 public class GuessGame {
     Player p1;

@@ -1,4 +1,4 @@
-package OOP.Buoi3;
+package oop.Buoi3;
 
 public class Dog {
     int size;

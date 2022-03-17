@@ -1,4 +1,4 @@
-package OOP.Buoi4;
+package oop.Buoi4;
 
 public class GameLaucher {
     public static void main(String[] args) {
