@@ -46,9 +46,9 @@ public class Listgiaodich extends Giaodichnhadat{
             System.out.println("Trung binh giao dich dat"+ tb);
         }
     }
-    public void tinhTrungBinhDat(){
+    public int tinhTrungBinhDat(){
         tb = (float) ((sumdt1 + sumdt2)/2);
-        return;
+        return tb;
     }
      
 }
