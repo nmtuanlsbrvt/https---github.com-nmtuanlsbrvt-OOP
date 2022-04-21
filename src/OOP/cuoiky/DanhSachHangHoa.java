@@ -1,6 +1,5 @@
 package oop.cuoiky;
 
-import java.io.FileWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -47,7 +46,7 @@ public class DanhSachHangHoa {
     }
   
     public void inThongTinDienMay(){
-      System.out.println("Thong tin HH Dien May: ");
+      System.out.println("Thong tin Dien May: ");
       for (HangHoa hangHoa : danhSach) {
         if(hangHoa.getMaHang().contains("D"))
         System.out.println(hangHoa);
@@ -55,7 +54,7 @@ public class DanhSachHangHoa {
     }
   
     public void inThongTinSanhSu(){
-      System.out.println("Thong tin HH Sanh Su: ");
+      System.out.println("Thong tin Sanh Su: ");
       for (HangHoa hangHoa : danhSach) {
         if(hangHoa.getMaHang().contains("S"))
         System.out.println(hangHoa);
@@ -63,7 +62,7 @@ public class DanhSachHangHoa {
     }
   
     public void xoaHangHoaTheoMaHang() {
-      System.out.println("Nhap ma hang can xoa: ");
+      System.out.println("Nhập mã cần xóa: ");
       String maHangCanXoa = sc1.nextLine();
       HangHoa hangHoa1 = null;
       for (HangHoa hangHoa : danhSach) {
@@ -72,14 +71,14 @@ public class DanhSachHangHoa {
       }
       if (hangHoa1 != null) {
         danhSach.remove(hangHoa1);
-        System.out.println("Xoa thanh cong!");
+        System.out.println("Xóa thành công!");
       } else {
-        System.out.println("Nhap ma sai roi be oi !");
+        System.out.println("Nhập mã sai! Xin vui lòng thử lại");
       }
     }
   
     public void xoaHangHoaTheoTenHang() {
-      System.out.println("Nhap ten hang can xoa: ");
+      System.out.println("Nhập tên hàng cần xóa: ");
       String tenHanHoaCanXoa = sc1.nextLine();
       HangHoa hangHoa1 = null;
       for (HangHoa hangHoa : danhSach) {
@@ -88,40 +87,40 @@ public class DanhSachHangHoa {
       }
       if (hangHoa1 != null) {
         danhSach.remove(hangHoa1);
-        System.out.println("Xoa thanh cong!");
+        System.out.println("Xóa thành công!");
       } else {
-        System.out.println("Nhap ten hang sai roi be oi !");
+        System.out.println("Nhập tên hàng sai! Xin thử lại.");
       }
     }
   
     public void timHangHoaTheoMa() {
-      System.out.println("Nhap ma hang can tim");
+      System.out.println("Nhập mã hàng cần tìm");
       String maHangCanTim = sc1.nextLine();
       HangHoa hangHoa1 = null;
       for (HangHoa hangHoa : danhSach) {
         if (hangHoa.getMaHang().equalsIgnoreCase(maHangCanTim)) {
           hangHoa1 = hangHoa;
-          System.out.println("Ma hang da tim duoc:");
+          System.out.println("Mã hàng tìm được là:");
           System.out.println(hangHoa1);
         }
       }
     }
   
     public void timHangHoaTheoMaHang(String maHangCanTim) {
-      System.out.println("Nhap ma hang can tim");
+      System.out.println("Nhập mã hàng cần tìm");
       maHangCanTim = sc1.nextLine();
       HangHoa hangHoa1 = null;
       for (HangHoa hangHoa : danhSach) {
         if (hangHoa.getMaHang().equalsIgnoreCase(maHangCanTim)) {
           hangHoa1 = hangHoa;
-          System.out.println("Ma hang da tim duoc:");
+          System.out.println("Mã hàng cần tìm là:");
           System.out.println(hangHoa1);
         }
       }
     }
     public HangHoa timHangHoaTheoMaHangTraVeHangHoa(String maHangCanTim) {
       HangHoa hangHoa =null;
-      System.out.println("Nhap ma hang can tim");
+      System.out.println("Nhập mã hàng cần tìm");
       maHangCanTim = sc1.nextLine();
       for (HangHoa hangHoa1 : danhSach) {
         if (hangHoa1.getMaHang().equalsIgnoreCase(maHangCanTim)) {
@@ -133,20 +132,20 @@ public class DanhSachHangHoa {
   
   
     public void timHangHoaTheoTenHang() {
-      System.out.println("Nhap ten hang can tim");
+      System.out.println("Nhập tên hàng cần tìm: ");
       String tenHangCanTim = sc1.nextLine();
       HangHoa hangHoa1 = null;
       for (HangHoa hangHoa : danhSach) {
         if (hangHoa.getTenHang().equalsIgnoreCase(tenHangCanTim)) {
           hangHoa1 = hangHoa;
-          System.out.println("ten hang da tim duoc:");
+          System.out.println("Tên hàng hóa tìm được là:");
           System.out.println(hangHoa1);
         }
       }
     }
   
     public void sapXepHangHoa() { 
-      System.out.println("Hang hoa đa duoc sap xep!: ");
+      System.out.println("Hàng hóa đã được sắp xếp!: ");
       Collections.sort(danhSach, (o1, o2) -> o1.getMaHang().compareTo(o2.getMaHang()));
     }
   
@@ -160,12 +159,12 @@ public class DanhSachHangHoa {
     public void suaHangHoa(String maHang) throws ParseException{
       int viTri = timViTriHangHoa(timHangHoaTheoMaHangTraVeHangHoa(maHang));
       if(viTri == -1){
-        System.out.println("Khong tim thay");
+        System.out.println("Không tìm thấy hàng hóa phù hợp!!!");
       }else{
         HangHoa hangHoa = consoleinput.suaHangHoa();
         if(hangHoa != null){
           this.danhSach.set(viTri, hangHoa);
-          System.out.println("Da sua hang hoa");
+          System.out.println("Đã sửa hàng hóa");
         }
       }
      }
@@ -200,7 +199,7 @@ public class DanhSachHangHoa {
   
     public void baoCao(){
       double tongThanhTienThucPham = 0, tongThanhTienDienMay = 0, tongThanhTienSanhSu = 0;
-      System.out.println("Tong thanh tien cac loai HH hien co:");
+      System.out.println("Tong thanh tien cac loai hang hoa hien co:");
       for(HangHoa hangHoa : danhSach){
         if (hangHoa.getMaHang().contains("T")) {
           tongThanhTienThucPham = tongThanhTienThucPham + hangHoa.tinhTien();

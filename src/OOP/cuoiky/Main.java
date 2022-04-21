@@ -84,7 +84,7 @@ public class Main {
                 case 5:
                     System.out.println("\t1) Tìm hàng hóa theo mã hàng.");
                     System.out.println("\t2) Tìm hàng hóa theo tên hàng.");
-                    System.out.println("Hãy chọn tìm hàng hóa theo? (1 -> 2):");
+                    System.out.println("Hãy chọn tìm hàng hóa theo? (1 hoặc 2):");
                     int chon3 = sc1.nextInt();
                     switch (chon3) {
                         case 1:
@@ -94,7 +94,7 @@ public class Main {
                             dshh.timHangHoaTheoTenHang();
                             break;
                         default:
-                            System.out.println(" Chon 1 hoac 2 thoi be oi !!!");
+                            System.out.println(" Chọn 1 trong 2!!!");
                     }
                     break;
                 case 6:
@@ -107,13 +107,13 @@ public class Main {
                     dshh.sapXepHangHoa();
                     break;
                 case 9:
-                    System.out.println("Da ghi file !!!");
+                    System.out.println("Đã ghi file!!!");
                     dshh.docFile();
                 case 0:
-                    System.out.println("Cam on da su dung chuong trinh !");
+                    System.out.println("Cảm ơn vì đã sử dụng chương trình này!");
                     break;
                 default:
-                    System.out.println("Tu 1 den 9 thoi be oi !!!");
+                    System.out.println("Chọn 1 trong 9 chức năng trong menu!!!");
             }
             System.out.println("Về Menu(y/n)?: ");
         } while (dshh.sc1.nextLine().equals("y"));
