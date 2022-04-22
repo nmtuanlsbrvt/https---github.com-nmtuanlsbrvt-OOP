@@ -30,7 +30,7 @@ public class HangDienMay extends HangHoa {
 
     protected HangDienMay(){}
 
-    public HangDienMay(String maHang, String tenHang, double soLuongTon, double donGia, int thoiGianBaoHanh2, int congSuat2) {
+    public HangDienMay(String maHang, String tenHang, double soLuongTon, double donGia, int thoiGianBaoHanh, int congSuat) {
         super(maHang, tenHang, soLuongTon, donGia);
         this.congSuat = congSuat;
         this.thoiGianBaoHanh = thoiGianBaoHanh;
