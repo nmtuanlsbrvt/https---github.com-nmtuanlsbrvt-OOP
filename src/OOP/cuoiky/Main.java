@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws ParseException, NullPointerException {
         Consoleinput consoleinput = new Consoleinput();
         DanhSachHangHoa dshh = new DanhSachHangHoa();
         Scanner sc1 = new Scanner(System.in);

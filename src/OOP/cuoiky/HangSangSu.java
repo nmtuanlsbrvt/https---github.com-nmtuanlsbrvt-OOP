@@ -1,7 +1,6 @@
 package oop.cuoiky;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 public class HangSangSu extends HangHoa{
@@ -26,7 +25,7 @@ public class HangSangSu extends HangHoa{
 
     protected HangSangSu(){}
 
-    public HangSangSu(String maHang, String tenHang, double soLuongTon, double donGia, String nhaSanXuat2, Date ngayNhapKho2) {
+    public HangSangSu(String maHang, String tenHang, double soLuongTon, double donGia, String nhaSanXuat, Date ngayNhapKho) {
         super(maHang, tenHang, soLuongTon, donGia);
         this.ngayNhapKho = ngayNhapKho;
         this.nhaSanXuat = nhaSanXuat;

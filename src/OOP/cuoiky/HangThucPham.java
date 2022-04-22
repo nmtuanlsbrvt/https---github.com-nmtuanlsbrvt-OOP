@@ -3,7 +3,7 @@ package oop.cuoiky;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class HangThucPham extends HangHoa{
+public class HangThucPham extends HangHoa {
     
     public Date ngaySanXuat;
     public Date ngayHetHan;
@@ -36,12 +36,12 @@ public class HangThucPham extends HangHoa{
         return nhaCungCap;
     }
     public void setNhaCungCap(String nhaCungCap) {
-        this.nhaCungCap = nhaCungCap;
+        this.nhaCungCap= nhaCungCap;
     }
 
-    protected HangThucPham(String maHang, String tenHang, int soLuongTon, double donGia, Date ngaySanXuat2, Date ngayHetHan2, String nhaSanXuat){}
+    protected HangThucPham(String maHang, String tenHang, int soLuongTon, double donGia, Date ngaySanXuat, Date ngayHetHan, String nhaSanXuat){}
 
-    public HangThucPham(String maHang, String tenHang, double soLuongTon, double donGia) {
+    public <ate> HangThucPham(String maHang, String tenHang, double soLuongTon, double donGia, Date ngaySanXuat, Date ngayHetHan, String nhaSanXuat, String nhaCungCap) {
         super(maHang, tenHang, soLuongTon, donGia);
         this.ngaySanXuat = ngaySanXuat;
         this.ngayHetHan = ngayHetHan;
