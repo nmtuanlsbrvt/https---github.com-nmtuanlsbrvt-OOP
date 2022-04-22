@@ -5,8 +5,8 @@ import java.util.Date;
 
 public class HangThucPham extends HangHoa {
     
-    public Date ngaySanXuat;
-    public Date ngayHetHan;
+    private Date ngaySanXuat;
+    private Date ngayHetHan;
     private String nhaCungCap;
 
     SimpleDateFormat ngayVN = new SimpleDateFormat("dd/MM/yyyy");
